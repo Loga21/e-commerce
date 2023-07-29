@@ -25,7 +25,7 @@ const Card = ({ product }) => {
           <h6 className='card-title fw-bold mb-0 text-center fs-5 mb-2'>{product.name}</h6>
           <p className='card-text fw-bold text-muted'>{truncate(product?.description, 75)}</p>
           <div className='my-4 pb-3'>
-            <span className='card-text fw-bold float-start ms-2'>MRP:&#8377;{product.maxRetailPrice}</span>
+            <span className='card-text fw-bold float-start ms-2'>MRP : &#8377; {product.maxRetailPrice}</span>
             <button
               type='button'
               className='btn-link fw-medium border-0 bg-transparent float-end text-primary me-3'
