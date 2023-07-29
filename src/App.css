@@ -1,0 +1,188 @@
+/* body {
+  min-width: 500px;
+  box-sizing: border-box;
+} */
+
+.App {
+  /* text-align: center; */
+  position: relative;
+}
+
+.absolute-box {
+  position: absolute;
+  left: 44%;
+  top: 50%;
+}
+
+.mode-container {
+  position: absolute;
+  left: 44%;
+  top: 21%;
+}
+
+.title-content {
+  position: absolute;
+  left: 42%;
+  top: 4%;
+}
+
+.modal-desc{
+  text-align: justify;
+}
+
+@media screen and (min-width: 600px) and (max-width: 730px) {
+
+  .absolute-box,
+  .mode-container,
+  .title-content {
+    left: 35%;
+  }
+
+  .absolute-box div input {
+    border-radius: 10px;
+    font-size: 0.9em;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .absolute-box,
+  .mode-container,
+  .title-content {
+    left: 31%;
+    /* margin-left: -12%; */
+  }
+
+  .absolute-box div input {
+    border-radius: 10px;
+    font-size: 0.9em;
+    outline: none;
+  }
+
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  outline: none;
+  border: 1px solid skyblue;
+  width: 200px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.suggestions {
+  height: 15vh;
+  width: 200px;
+  margin: 10px 0px 0px 0px;
+  margin-bottom: 30px;
+}
+
+.suggestions-alt {
+  height: 15vh;
+  width: 200px;
+  margin: 10px 0px 0px 0px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.suggestions-alt::-webkit-scrollbar {
+  display: none;
+}
+
+.head-top-container {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  background-color: rgb(123, 161, 176);
+  border-bottom: 2px solid rgb(2, 149, 241);
+  overflow: hidden;
+  box-shadow: 1px 1px 1000px 100px rgb(123, 161, 176);
+}
+
+.head-top-container::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('https://img.myloview.com/stickers/e-commerce-isometric-web-banner-online-shopping-platform-isometry-concept-customer-support-3d-scene-purchase-order-and-delivery-service-flat-design-vector-illustration-with-people-characters-700-234302143.jpg');
+  clip-path: circle(30% at left 50%);
+  background-size: 50vh;
+  z-index: 1;
+}
+
+.head-top-container::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url('https://img.myloview.com/stickers/social-network-isometric-web-banner-internet-community-communication-isometry-concept-social-media-content-sharing-3d-scene-posting-message-flat-design-vector-illustration-with-people-characters-400-234901488.jpg');
+  background-size: 50vh;
+  clip-path: circle(30% at right 100px);
+}
+
+.drop-down-list:nth-child(odd) {
+  background-color: rgba(1, 1, 255, 0.2);
+  color: white;
+  margin: 2px 0px;
+  padding: 1px 0px;
+}
+
+.drop-down-list:nth-child(even) {
+  background-color: rgb(84, 174, 136);
+  color: white;
+  margin: 2px 0px;
+  padding: 1px 0px;
+
+}
+
+.mode-container select {
+  width: 200px;
+  padding: 10px;
+  margin-left: 1%;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+option:nth-child(odd) {
+  /* background-color: white; */
+  color: black;
+  cursor: pointer;
+  /* z-index: 3; */
+}
+
+option:nth-child(even) {
+  /* background-color: white; */
+  color: black;
+  cursor: pointer;
+  /* z-index: 3; */
+}
+
+select.decorated option:hover {
+  background-color: none;
+  color: red;
+  cursor: pointer;
+}
+
+.viewDetailsBtn button {
+  margin-top: 3px;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: rgb(5, 51, 80);
+}
