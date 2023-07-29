@@ -22,7 +22,7 @@ const Card = ({ product }) => {
         <div className='card-body p-0 mt-4'>
           <div className='position-absolute top-0 end-0 rounded-circle px-1 py-1 me-2 mt-2 text-white'>
           </div>
-          <h6 className='card-title fw-bold mb-0 text-center fs-5 mb-2'>{product.name}</h6>
+          <h6 className='card-title fw-bold mb-0 text-center fs-5 mb-2'> {product.name}</h6>
           <p className='card-text fw-bold text-muted'>{truncate(product?.description, 75)}</p>
           <div className='my-4 pb-3'>
             <span className='card-text fw-bold float-start ms-2'>MRP:&#8377;{product.maxRetailPrice}</span>
